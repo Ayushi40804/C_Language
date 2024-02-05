@@ -10,4 +10,3 @@ int main()
         b++;
     }
     return 0;
-}
