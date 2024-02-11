@@ -9,6 +9,6 @@ int main()
         b+=a%10;
         a=(a-(a%10))/10;
     }
-    printf("The sum of th digits is %d.",b);
+    printf("The sum of the digits is %d.",b);
     return 0;
 }
