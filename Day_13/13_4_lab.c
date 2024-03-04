@@ -1,7 +1,7 @@
 #include <stdio.h>
 int main()
 {
-    int arr[10][20],i,j,R,C;
+    int arr[10][20],SUM=0,i,j,k,R,C;
     printf("Enter the number of units: \n");
     scanf("%d",&R);
     printf("Select the number of Columns: \n");
@@ -19,5 +19,14 @@ int main()
         }
         printf("\n");
     }
+    //SUM OF UPPER TRIANGULAR MATRIX
+    for (i=0 ; i<R ; i++){
+        for(j=0 ; j<C ; j++){
+            for(k=0; k<C ; k++){
+                SUM=SUM+arr[i+k][j];
+            }
+        }
+    }
+    printf("%d",SUM);
     return 0;
 }

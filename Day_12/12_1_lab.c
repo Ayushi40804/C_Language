@@ -1,33 +1,26 @@
-#include <stdio.h>
+#include<stdio.h>
 int main()
 {
-    int i,x,arr[500],a=0,b=0,c=0;
-    printf("enter the number of digits array to be made: ");
-    scanf("%d",&x);
-    for (i=0 ; i<x ;i++){
-        printf("Enter the digit to be enterd in the array: ");
-        scanf("%d", &arr[i]);
+    int a[100],n,i,j,temp;
+    printf("\nEnter how many numbers :");
+    scanf("%d",&n);
+    printf("\nEnter the value of %d Numbers",n);
+    for(i=0;i<n;i++){
+        scanf("%d",&a[i]);
     }
-    for (i=0 ; i<x && arr[i]<arr[i+1]; i++){
-        for(i=0 ; i<x ; i++){
-            for (i=0 ; i<x ;){
-            a=arr[i];
-            b=arr[i+1];
-            if (a<b){
-                i++;
-                }
-            else{
-                c=a;
-                arr[i]=b;
-                arr[i+1]=c;
-            }        
-            }
+    /*BUBBLE SORT technique*/
+    for(i=1;i<=n-1;i++){
+        for(j=0;j<n-i;j++){
+            if(a[j]>a[j+1]){
+                temp=a[j];
+                a[j]=a[j+1];
+                a[j+1]=temp;
+            }  
         }
-    }    
-
-    for(i=0 ; i<x ; i++){
-        printf("%d\n",arr[i]);
     }
-
+    printf("\nThe Numbers in ascending order are\n ");
+    for(i=0;i<n;i++){
+        printf("%d ",a[i]);
+    }
     return 0;
 }

@@ -16,6 +16,7 @@ int main()
     scanf("%d", &R2);
     printf("ENter the number of Columns: ");
     scanf("%d",&C2);
+    printf("ENTER THE ELEMENTS OF MATRIX 2\n");
     for (i=0 ; i<R2 ; i++){
         for (j=0 ; j<C2 ; j++){
             scanf("%d",&arr2[i][j]);
