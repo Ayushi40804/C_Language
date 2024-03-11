@@ -7,11 +7,9 @@ int main()
         if (a%2==0){
             printf("%d\n",a);
         }
-        else{
-            
+        else{    
         }
         a++;
-
     }
     return 0;
 }

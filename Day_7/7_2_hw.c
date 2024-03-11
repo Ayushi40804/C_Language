@@ -1,3 +1,4 @@
+//To test for armstrong number.Example 153,370,371,407.
 #include <stdio.h>
 int main()
 {

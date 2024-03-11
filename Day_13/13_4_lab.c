@@ -21,10 +21,8 @@ int main()
     }
     //SUM OF UPPER TRIANGULAR MATRIX
     for (i=0 ; i<R ; i++){
-        for(j=0 ; j<C ; j++){
-            for(k=0; k<C ; k++){
-                SUM=SUM+arr[i+k][j];
-            }
+        for(j=i+1 ; j<C ; j++){
+            SUM=SUM+arr[i][j];
         }
     }
     printf("%d",SUM);
