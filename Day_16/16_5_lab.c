@@ -11,7 +11,7 @@ int SWAP(int x){
 }
 int main()
 {
-    printf("Enter the elements: \n");
+    printf("Enter the no of elements: \n");
     scanf("%d",&x);
     printf("ENTER THE ELEMENTS:\n");
     for(i=0;i<x;i++){
