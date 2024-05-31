@@ -12,7 +12,7 @@ int main()
 }
 
 
-void REVERSE_STRING (str)
+void REVERSE_STRING (char [str])
 {
     char *p=str , *q=str , t;
     for (; *q;q--);
