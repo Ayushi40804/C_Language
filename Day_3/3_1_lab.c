@@ -1,5 +1,4 @@
-/*WAP to perform the addition of two integers and display the result. 
-Input must be given by   user.*/
+//WAP to perform the addition of two integers and display the result. Input must be given by user.
 #include <stdio.h>
 int main()
 {
