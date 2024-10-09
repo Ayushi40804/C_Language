@@ -1,3 +1,4 @@
+//find factorial of a number using loop
 #include <stdio.h>
 int x,i,fact=1,factor=0;
 int factorial(){
